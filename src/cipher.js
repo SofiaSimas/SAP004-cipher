@@ -42,4 +42,4 @@ const cipher = {
     }
 };
 
-//export default cipher;
+export default cipher;

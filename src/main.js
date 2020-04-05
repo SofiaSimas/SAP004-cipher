@@ -1,6 +1,4 @@
-//import cipher from './cipher.js';
-
-//console.log(cipher.decode(3, "sofia"));
+import cipher from './cipher.js';
 
 function setName() {
     const name = document.getElementById("nameInput").value
