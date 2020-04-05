@@ -1,5 +1,12 @@
 const cipher = {
     decode: function(offset, text) {
+        if (typeof offset !== "number") {
+            throw new Error("Offset deve ser número");
+        }
+        if (typeof text !== "string") {
+            throw new Error("Teste deve ser string");
+        }
+
         let result = "";
         const alphabetSize = 26;
         for (let i = 0; i < text.length; i++) {
@@ -20,6 +27,13 @@ const cipher = {
         return result;
     },
     encode: function(offset, text) {
+        if (typeof offset !== "number") {
+            throw new Error("Offset deve ser número")
+        }
+        if (typeof text !== "string") {
+            throw new Error("Teste deve ser string")
+        }
+
         let result = "";
         const alphabetSize = 26;
         for (let i = 0; i < text.length; i++) {
