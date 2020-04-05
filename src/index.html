@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="active" id="welcome">
+        <h1>OLÁ DETETIVE</h1>
+        <label for="name">Qual seu nome secreto?</label>
+        <input type="text" required id="nameInput">
+        <div class="button" class="container container-two">
+            <button id="setName" class="buttonNice">Enviar</button>
+        </div>
+        <div class="detective">
+            <img src="imagens/detetive.png" />
+        </div>
+    </section>
+    <section id="initial" class="container" class="initial">
+        <div>
+            <img src="imagens/Julio-Cesar.jpg" />
+        </div>
+        <div>
+            <h2>Detetive <span id="name"></span>, você conhece a CIFRA DE CÉSAR?</h2>
+            <p>A cifra de César foi nomeada em homenagem a Júlio César que, segundo Suetónio, a usava com uma troca de três posições para proteger mensagens de significado militar. Ainda que o uso deste esquema por César tenha sido o primeiro a ser registrado,
+                é sabido que outras cifras de substituições foram utilizadas anteriormente. Será que, assim como César, você conseguiria levar suas mensagens protegidas dos militares? Não esqueça do número de casas para deslocar sua mensagem!
+            </p>
+            <button id="letsGo">VAMOS LÁ</button>
+        </div>
+    </section>
+    <section class="firstmessage" id="firstmessage">
+        <p>Nesta primeira parte, detetive, você deixará uma mensagem secreta. Lembre-se de nunca esquecer o código para o deslocamento. </p>
+        <label for="setMessage" class="messageCipher" id="messageCipher">Qual sua mensagem secreta?</label>
+
+        <textarea id="setMessage" name="message" rows="3" cols="50">
+      </textarea>
+
+        <label for="offsetEncode">Código secreto de deslocamento</label>
+        <input type="number" min="1" id="offsetEncode" />
+
+        <div class="button">
+            <button class="buttonCipher" id="encode">CIFRAR</button>
+        </div>
+
+        <label for="resultEncode">AQUI ESTÁ SUA MENSAGEM SECRETA</label>
+
+        <textarea id="resultEncode" name="mensage" rows="5" cols="33">
+      </textarea>
+        <button class="buttonNext" id="nextButton">PRÓXIMO</button>
+    </section>
+
+    <section class="deciphertMenssage" id="menssageDecipher">
+        <p>Agora testaremos suas habilidades de detetive. Você consegue decifrar o que Lembre-se de nunca esquecer o código para o deslocamento. </p>
+        <label for="offsetDecode">Número deslocamento </label>
+        <input type="number" min="1" id="offsetDecode" />
+        <div class="button">
+            <button class="button" id="encodeMessage">DECIFRAR</button>
+        </div>
+        <label for="resultDecode">MENSAGEM</label>
+
+        <textarea id="resultDecode" name="mensage" rows="5" cols="33">
+      </textarea>
+    </section>
+
+    <script src="cipher.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
 </html>
