@@ -34,9 +34,9 @@ function encode() {
 }
 
 function decode() {
-    const encodeMessage = document.getElementById("resultEncode").value;
+    const decipherMessage = document.getElementById("setMessageDecipher").value;
     const offset = document.getElementById("offsetDecode").valueAsNumber;
-    const decodeMessage = cipher.decode(offset, encodeMessage);
+    const decodeMessage = cipher.decode(offset, decipherMessage);
     const result = document.getElementById("resultDecode");
     result.value = decodeMessage;
 }
@@ -50,7 +50,7 @@ function initilize() {
     cipherCesar.addEventListener("click", encode)
     const buttonNext = document.getElementById("nextButton");
     buttonNext.addEventListener("click", resultSecret)
-    const decipherCesar = document.getElementById("encodeMessage)");
+    const decipherCesar = document.getElementById("encodeMessage");
     decipherCesar.addEventListener("click", decode)
 }
 window.onload = initilize

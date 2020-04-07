@@ -28,10 +28,10 @@ const cipher = {
     },
     encode: function(offset, text) {
         if (typeof offset !== "number") {
-            throw new Error("Offset deve ser número")
+            throw new Error("Offset deve ser número");
         }
         if (typeof text !== "string") {
-            throw new Error("Teste deve ser string")
+            throw new Error("Teste deve ser string");
         }
 
         let result = "";
