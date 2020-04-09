@@ -7,7 +7,7 @@ function setName() {
     const initial = document.getElementById("initial")
     initial.classList.add("active")
     const welcome = document.getElementById("welcome")
-    welcome.classList.remove("active")
+    welcome.classList.remove("active-flex")
 }
 
 function letsGo() {
@@ -25,6 +25,14 @@ function resultSecret() {
     firstmessage.classList.remove("active")
 }
 
+function back() {
+    const firstmessage = document.getElementById("welcome")
+    welcome.classList.add("active-flex")
+    const deciphertMenssage = document.getElementById("menssageDecipher")
+    deciphertMenssage.classList.remove("active")
+}
+
+
 function encode() {
     const message = document.getElementById("setMessage").value;
     const offset = document.getElementById("offsetEncode").valueAsNumber;
@@ -41,6 +49,7 @@ function decode() {
     result.value = decodeMessage;
 }
 
+
 function initilize() {
     const nameInitial = document.getElementById("setName");
     nameInitial.addEventListener("click", setName)
@@ -52,5 +61,7 @@ function initilize() {
     buttonNext.addEventListener("click", resultSecret)
     const decipherCesar = document.getElementById("encodeMessage");
     decipherCesar.addEventListener("click", decode)
+    const backBotton = document.getElementById("back");
+    backBotton.addEventListener("click", back)
 }
 window.onload = initilize

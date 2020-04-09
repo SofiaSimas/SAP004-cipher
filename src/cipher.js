@@ -9,6 +9,7 @@ const cipher = {
 
         let result = "";
         const alphabetSize = 26;
+        //for (inicio; teste; incremento)//
         for (let i = 0; i < text.length; i++) {
             let current = text.charCodeAt(i);
             let code = 0;

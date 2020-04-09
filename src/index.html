@@ -3,70 +3,88 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Detetive Júnior</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section class="active" id="welcome">
-        <h1>OLÁ DETETIVE</h1>
-        <label for="name">Qual seu nome secreto?</label>
-        <input type="text" required id="nameInput">
-        <div class="container-two">
-            <button id="setName" class="buttonNice">Enviar</button>
+    <section class="active-flex" id="welcome">
+        <div>
+            <h1>OLÁ DETETIVE</h1>
+            <label for="name">Qual seu nome secreto?</label>
+            <input type="text" required id="nameInput">
+            <div class="container-two">
+                <button id="setName" class="buttonNice">Enviar</button>
+            </div>
         </div>
-        <div class="detective">
-            <img src="imagens/detetive.png" />
-        </div>
+        <img class="imagemDetetive" src="imagens/detetive.png" />
     </section>
     <section id="initial" class="container">
-        <img src="imagens/Julio-Cesar.jpg" />
-        <div>
-            <h2>Detetive <span id="name"></span>, você conhece a CIFRA DE CÉSAR?</h2>
-            <p>A cifra de César foi nomeada em homenagem a Júlio César que, segundo Suetónio, a usava com uma troca de três posições para proteger mensagens de significado militar. Ainda que o uso deste esquema por César tenha sido o primeiro a ser registrado,
+        <h2>Detetive <span id="name"></span>, você conhece a CIFRA DE CÉSAR?</h2>
+
+        <div class="container-flex">
+            <img src="imagens/Julio-Cesar.jpg" />
+            <p class="whatcifra">A cifra de César foi nomeada em homenagem a Júlio César que, segundo Suetónio, a usava com uma troca de três posições para proteger mensagens de significado militar. Ainda que o uso deste esquema por César tenha sido o primeiro a ser registrado,
                 é sabido que outras cifras de substituições foram utilizadas anteriormente. Será que, assim como César, você conseguiria levar suas mensagens protegidas dos militares? Não esqueça do número de casas para deslocar sua mensagem!
             </p>
-            <button id="letsGo">VAMOS LÁ</button>
         </div>
+        <button id="letsGo" class="buttonLetsGo">VAMOS LÁ >></button>
     </section>
     <section class="firstmessage" id="firstmessage">
-        <p>Nesta primeira parte, detetive, você deixará uma mensagem secreta. Lembre-se de nunca esquecer o código para o deslocamento. </p>
-        <label for="setMessage" class="messageCipher" id="messageCipher">Qual sua mensagem secreta?</label>
+        <p class="partone">Nesta primeira parte, detetive, você deixará uma mensagem secreta. Lembre-se de nunca esquecer o código para o deslocamento. </p>
+        <div class="container-flex">
+            <div>
+                <label for="setMessage" class="messageCipher" id="messageCipher">ESCREVA A MENSAGEM SECRETA</label>
 
-        <textarea id="setMessage" name="message" rows="3" cols="50">
-      </textarea>
+                <textarea id="setMessage" name="message" rows="2" cols="30">
+                </textarea>
 
-        <label for="offsetEncode">Código secreto de deslocamento</label>
-        <input type="number" min="1" id="offsetEncode" />
+                <label for="offsetEncode">Código secreto</label>
+                <input type="number" min="1" id="offsetEncode" class="numbercipher" />
+            </div>
 
-        <div class="button">
-            <button class="buttonCipher" id="encode">CIFRAR</button>
+            <div class="button">
+                <button class="buttonCipher" id="encode">CIFRAR</button>
+            </div>
+            <div>
+
+                <label for="resultEncode">SUA MENSAGEM SECRETA:</label>
+
+                <textarea id="resultEncode" name="mensage" rows="2" cols="30">
+                    </textarea>
+            </div>
         </div>
 
-        <label for="resultEncode">AQUI ESTÁ SUA MENSAGEM SECRETA</label>
-
-        <textarea id="resultEncode" name="mensage" rows="5" cols="33">
-      </textarea>
         <button class="buttonNext" id="nextButton">PRÓXIMO</button>
+
+
     </section>
 
     <section class="deciphertMenssage" id="menssageDecipher">
-        <label for="setMessageDecipher" class="messageDecipher" id="messageDecode">Qual sua mensagem secreta?</label>
-
-        <textarea id="setMessageDecipher" name="message" rows="3" cols="50">
-      </textarea>
-        <label for="offsetDecode">Número deslocamento </label>
-
-        <input type="number" id="offsetDecode" />
-        <div class="button">
-            <button class="button" id="encodeMessage">DECIFRAR</button>
+        <p class="partone">Agora, detetive, você irá auxiliar nossos detetives em um caso. Na carta encontrada há uma mensagem: </p>
+        <div class="container-flex">
+            <img class="detetives-decipher" src="imagens/detectives.png" />
+            <div>
+                <p class="mensagem-decipher">TXHP PH DVVDVVLQRX IRL MRDTXLP!</p>
+                <p class="dica">DICA: O código secreto está na imagem ao lado, muita atenção!</p>
+                <label for="setMessageDecipher" class="messageDecipher" id="messageDecode">Repita a mensagem da carta</label>
+                <textarea id="setMessageDecipher" name="message" rows="2" cols="30">
+                </textarea>
+                <label for="offsetDecode">Código secreto </label>
+                <input type="number" id="offsetDecode" />
+                <div class="button">
+                    <button class="buttonCipher" id="encodeMessage">DECIFRAR</button>
+                </div>
+                <label for="resultDecode">MENSAGEM</label>
+                <textarea id="resultDecode" name="mensage" rows="2" cols="30">
+                </textarea>
+                <p class="dica">Pronto: Agora você pode mandar mensagens secretas para quem você quiser, e decifrar dos seus amiguinhos! Boa espiagem</p>
+            </div>
         </div>
-        <label for="resultDecode">MENSAGEM</label>
+        <button class="button-back" id="back">VOLTAR</button>
 
-        <textarea id="resultDecode" name="mensage" rows="5" cols="33">
-      </textarea>
     </section>
     <script src="main.js" type="module"></script>
 
