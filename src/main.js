@@ -26,7 +26,7 @@ function resultSecret() {
 }
 
 function back() {
-    const firstmessage = document.getElementById("welcome")
+    const welcome = document.getElementById("welcome")
     welcome.classList.add("active-flex")
     const deciphertMenssage = document.getElementById("menssageDecipher")
     deciphertMenssage.classList.remove("active")

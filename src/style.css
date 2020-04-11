@@ -1,222 +1,223 @@
-    body {
-        background: #32057a;
-        color: rgb(148, 147, 147);
-        display: flex;
-        justify-content: center;
-    }
-    
-    section {
-        display: none;
-        background-color: #ffffff;
-        border-radius: 15px;
-    }
-    
-    section.active {
-        display: block;
-    }
-    
-    section.active-flex {
-        display: flex;
-        align-items: center;
-        margin: 60px;
-        padding: 20px;
-    }
-    
-    .container {
-        display: none;
-        background-color: #ffffff;
-        margin: 60px;
-        font-family: sans-serif;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .container-flex {
-        display: flex;
-        background-color: #ffffff;
-        margin: 30px;
-        font-family: sans-serif;
-        text-align: center;
-        align-items: stretch;
-        justify-content: space-around;
-    }
-    
-    .firstmessage {
-        margin: 80px 10px 0px 10px;
-        font-size: 35px;
-        text-align: center;
-        align-items: baseline;
-    }
-    
-    .deciphertMenssage {
-        font-family: 'Catamaran', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        align-items: center;
-    }
-    
-    label,
-    textarea {
-        font-size: .8rem;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-    
-    textarea {
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        box-shadow: 1px 1px 1px rgb(218, 218, 218);
-        color: rgb(255, 255, 255);
-        background-color: #176183;
-    }
-    
-    label {
-        display: block;
-        font-size: 20px;
-        font-family: 'Catamaran', sans-serif;
-        color: #aaaaaa;
-        margin: 5px;
-    }
-    
-    .buttonLetsGo {
-        background-image: linear-gradient(to right, rgb(150, 61, 163), rgb(6, 116, 116));
-        height: 50px;
-        width: 300px;
-        border-radius: 5px;
-        margin: 15px;
-        text-transform: uppercase;
-        font-family: Helvetica, sans-serif;
-        color: #fff;
-        font-size: 20px;
-    }
-    
-    .buttonNice {
-        background-image: linear-gradient(to right, rgb(150, 61, 163), rgb(6, 116, 116));
-        height: 50px;
-        width: 150px;
-        border-radius: 5px;
-        margin: 30px;
-        text-transform: uppercase;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 20px;
-        font-weight: 100;
-        color: #fff;
-    }
-    
-    .buttonCipher {
-        height: 50px;
-        width: 100px;
-        border-radius: 5px;
-        margin: 20px;
-        text-transform: uppercase;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        background-color: rgb(150, 61, 163)
-    }
-    
-    .buttonNext {
-        align-self: flex-end;
-        height: 50px;
-        width: 300px;
-        border-radius: 5px;
-        margin: 20px;
-        text-transform: uppercase;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(to right, rgb(150, 61, 163), rgb(6, 116, 116));
-    }
-    
-    .button-back {
-        height: 50px;
-        width: 300px;
-        border-radius: 5px;
-        margin: 20px;
-        text-transform: uppercase;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(to right, rgb(150, 61, 163), rgb(6, 116, 116));
-    }
-    
-    .imagemDetetive {
-        align-items: center;
-        padding: 5px;
-    }
-    
-    input {
-        font-size: 18px;
-        color: rgb(119, 117, 117);
-        padding: 10px 10px 10px 5px;
-        width: 200px;
-        border: none;
-        border-bottom: 1px solid #b8b7b7;
-    }
-    
-    .numbercipher {
-        font-size: 18px;
-        color: rgb(119, 117, 117);
-        padding: 10px 10px 10px 5px;
-        width: 100px;
-        border: none;
-        border-bottom: 1px solid #b8b7b7;
-    }
-    
-    h1 {
-        font-size: 35px;
-        font-family: 'Catamaran', sans-serif;
-        color: #c7686d;
-    }
-    
-    h2 {
-        font-size: 45px;
-        font-family: 'Catamaran', sans-serif;
-        color: #c7686d;
-        text-align: center;
-    }
-    
-    p {
-        font-family: 'Catamaran', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        margin: 10px;
-        color: rgb(156, 156, 156);
-    }
-    
-    .whatcifra {
-        border: transparent thin solid;
-        padding: 5px;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 20px;
-        width: 80%;
-    }
-    
-    .dica {
-        font-family: 'Catamaran', sans-serif;
-        font-size: 18px;
-        justify-content: center;
-        text-align: center;
-        width: 400px;
-        color: rgb(6, 116, 116);
-    }
-    
-    .partone {
-        padding: 10px;
-        width: 750px;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 25px;
-        text-align: left;
-        align-items: center;
-        color: #c7686d;
-    }
-    
-    .mensagem-decipher {
-        font-family: 'Catamaran', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        margin: 10px;
-        color: rgb(150, 61, 163);
-    }
+            body {
+                background: linear-gradient(to right, rgb(73, 33, 119), #c7686d);
+                color: rgb(148, 147, 147);
+                display: flex;
+                justify-content: center;
+            }
+            
+            section {
+                display: none;
+                background-color: #ffffff;
+                border-radius: 15px;
+                box-shadow: -5px 14px 54px rgba(0, 0, 0, 0.55);
+            }
+            
+            section.active {
+                display: block;
+            }
+            
+            section.active-flex {
+                display: flex;
+                align-items: center;
+                margin: 60px;
+                padding: 20px;
+            }
+            
+            .container {
+                display: none;
+                background-color: #ffffff;
+                margin: 60px;
+                font-family: sans-serif;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .container-flex {
+                display: flex;
+                background-color: #ffffff;
+                margin: 30px;
+                font-family: sans-serif;
+                text-align: center;
+                align-items: stretch;
+                justify-content: space-around;
+            }
+            
+            .firstmessage {
+                margin: 80px 10px 0px 10px;
+                font-size: 35px;
+                text-align: center;
+                align-items: baseline;
+            }
+            
+            .deciphertMenssage {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                align-items: center;
+            }
+            
+            label,
+            textarea {
+                font-size: .8rem;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            
+            textarea {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-shadow: 1px 1px 1px rgb(218, 218, 218);
+                color: rgb(255, 255, 255);
+                background-color: rgb(19, 153, 153);
+            }
+            
+            label {
+                display: block;
+                font-size: 20px;
+                font-family: 'Catamaran', sans-serif;
+                color: #aaaaaa;
+                margin: 5px;
+            }
+            
+            .buttonLetsGo {
+                background-image: linear-gradient(to right, rgb(150, 61, 163), #c7686d);
+                height: 50px;
+                width: 300px;
+                border-radius: 5px;
+                margin: 15px;
+                text-transform: uppercase;
+                font-family: Helvetica, sans-serif;
+                color: #fff;
+                font-size: 20px;
+            }
+            
+            .buttonNice {
+                background-image: linear-gradient(to right, rgb(150, 61, 163), #c7686d);
+                height: 50px;
+                width: 150px;
+                border-radius: 5px;
+                margin: 30px;
+                text-transform: uppercase;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 20px;
+                font-weight: 100;
+                color: #fff;
+            }
+            
+            .buttonCipher {
+                height: 50px;
+                width: 100px;
+                border-radius: 5px;
+                margin: 20px;
+                text-transform: uppercase;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(150, 61, 163)
+            }
+            
+            .buttonNext {
+                align-self: flex-end;
+                height: 50px;
+                width: 300px;
+                border-radius: 5px;
+                margin: 20px;
+                text-transform: uppercase;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(to right, rgb(150, 61, 163), #c7686d);
+            }
+            
+            .button-back {
+                height: 50px;
+                width: 300px;
+                border-radius: 5px;
+                margin: 20px;
+                text-transform: uppercase;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                background-image: linear-gradient(to right, rgb(150, 61, 163), #c7686d);
+            }
+            
+            .imagemDetetive {
+                align-items: center;
+                padding: 5px;
+            }
+            
+            input {
+                font-size: 18px;
+                color: rgb(119, 117, 117);
+                padding: 10px 10px 10px 5px;
+                width: 200px;
+                border: none;
+                border-bottom: 1px solid #b8b7b7;
+            }
+            
+            .numbercipher {
+                font-size: 18px;
+                color: rgb(119, 117, 117);
+                padding: 10px 10px 10px 5px;
+                width: 100px;
+                border: none;
+                border-bottom: 1px solid #b8b7b7;
+            }
+            
+            h1 {
+                font-size: 35px;
+                font-family: 'Catamaran', sans-serif;
+                color: #c7686d;
+            }
+            
+            h2 {
+                font-size: 45px;
+                font-family: 'Catamaran', sans-serif;
+                color: #c7686d;
+                text-align: center;
+            }
+            
+            p {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 25px;
+                text-align: center;
+                margin: 10px;
+                color: rgb(156, 156, 156);
+            }
+            
+            .whatcifra {
+                border: transparent thin solid;
+                padding: 5px;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 20px;
+                width: 80%;
+            }
+            
+            .dica {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 18px;
+                justify-content: center;
+                text-align: center;
+                width: 400px;
+                color: rgb(19, 153, 153);
+            }
+            
+            .partone {
+                padding: 10px;
+                width: 750px;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 25px;
+                text-align: left;
+                align-items: center;
+                color: #c7686d;
+            }
+            
+            .mensagem-decipher {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 25px;
+                text-align: center;
+                margin: 10px;
+                color: rgb(150, 61, 163);
+            }
