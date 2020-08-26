@@ -3,7 +3,7 @@
 ## Introdução
 Esse é um projeto desenvolvido com CSS, HTML e JavaScript. O objetivo é cifrar e decifrar textos sem caracteres especiais utilizando Cifra de César.
 
-A página desenvolvida permite que o usuário, este, com faixa etára entre 10 a 14 anos, utilizando como base a lógica simples e intuição para cifrar e decifrar um enigma proposto.
+A página desenvolvida permite que o usuário, este, com faixa etária entre 10 a 14 anos, utilizando como base a lógica simples e intuição para cifrar e decifrar um enigma proposto.
 
 ## Jogo
 
