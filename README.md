@@ -17,7 +17,7 @@ Formação de detetives júnior.
 
 Primeiramente o usuário irá entender e aprender sobre criptografia, logo ele começa a aventura de auxiliar nossos detetives na decifragem de uma mensagem sobre um caso de morte. O usuário encontra uma pista na imagem usa o código e decifra a mensagem da carta. Logo ele fica livre para cifrar e decifrar quantas mensagens quiser.
 
-# Usuários
+## Usuários
 
 Público-alvo: Pré-adolescentes e adolescentes entre 10 a 14 anos.
 
