@@ -1,34 +1,40 @@
 import cipher from './cipher.js';
 
+function addClass(id, cssClass) {
+    const element = document.getElementById(id)
+    element.classList.add(cssClass)
+}
+
+function removeClass(id, cssClass) {
+    const element = document.getElementById(id)
+    element.classList.remove(cssClass)
+}
+
 function setName() {
     const name = document.getElementById("nameInput").value
     const nameSpan = document.getElementById("name")
     nameSpan.innerHTML = name
-    const initial = document.getElementById("initial")
-    initial.classList.add("active")
-    const welcome = document.getElementById("welcome")
-    welcome.classList.remove("active-flex")
+    addClass("initial", "active")
+    removeClass("welcome", "active-flex")
 }
 
 function letsGo() {
-    const firstmessage = document.getElementById("firstmessage")
-    firstmessage.classList.add("active")
-    const initial = document.getElementById("initial")
-    initial.classList.remove("active")
+    addClass("firstmessage", "active")
+    removeClass("initial", "active")
 }
 
 
 function resultSecret() {
     const deciphertMenssage = document.getElementById("menssageDecipher")
-    deciphertMenssage.classList.add("active")
     const firstmessage = document.getElementById("firstmessage")
+    deciphertMenssage.classList.add("active")
     firstmessage.classList.remove("active")
 }
 
 function back() {
     const welcome = document.getElementById("welcome")
-    welcome.classList.add("active-flex")
     const deciphertMenssage = document.getElementById("menssageDecipher")
+    welcome.classList.add("active-flex")
     deciphertMenssage.classList.remove("active")
 }
 
@@ -50,18 +56,16 @@ function decode() {
 }
 
 
-function initilize() {
-    const nameInitial = document.getElementById("setName");
-    nameInitial.addEventListener("click", setName)
-    const goCipher = document.getElementById("letsGo");
-    goCipher.addEventListener("click", letsGo)
-    const cipherCesar = document.getElementById("encode");
-    cipherCesar.addEventListener("click", encode)
-    const buttonNext = document.getElementById("nextButton");
-    buttonNext.addEventListener("click", resultSecret)
-    const decipherCesar = document.getElementById("encodeMessage");
-    decipherCesar.addEventListener("click", decode)
-    const backBotton = document.getElementById("back");
-    backBotton.addEventListener("click", back)
-}
-window.onload = initilize
+
+const nameInitial = document.getElementById("setName");
+const goCipher = document.getElementById("letsGo");
+const cipherCesar = document.getElementById("encode");
+const buttonNext = document.getElementById("nextButton");
+const decipherCesar = document.getElementById("encodeMessage");
+const backBotton = document.getElementById("back");
+nameInitial.addEventListener("click", setName)
+goCipher.addEventListener("click", letsGo)
+cipherCesar.addEventListener("click", encode)
+buttonNext.addEventListener("click", resultSecret)
+decipherCesar.addEventListener("click", decode)
+backBotton.addEventListener("click", back)
